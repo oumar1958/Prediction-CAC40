@@ -66,10 +66,7 @@ Prédiction_chômage_France/
 └── PIB/
 ```
 
-## Auteurs
+## Auteur
 
-Ce projet est réalisé dans le cadre du Master 1 Analyse et politique économique, parcours Statistique pour l'évaluation et la prévision.
+Oumar Abdramane ALLAWAN
 
-## Licence
-
-Ce projet est protégé par les droits d'auteur. Pour toute utilisation, veuillez contacter l'auteur.
