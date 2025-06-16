@@ -98,8 +98,5 @@ Les paramètres du modèle sont configurables via le fichier `config.py` :
 
 ## Contributeurs
 
-- Développé par [Votre Nom]
+ Oumar Abdramane ALLAWAN
 
-## Licence
-
-Ce projet est sous licence MIT.
