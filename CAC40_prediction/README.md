@@ -1,4 +1,4 @@
-# Prédiction du CAC40
+# Prédiction CAC40
 
 Ce projet utilise des données historiques pour prédire les mouvements futurs du CAC40 en utilisant des techniques d'apprentissage automatique.
 
