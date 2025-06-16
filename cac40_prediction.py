@@ -14,23 +14,9 @@ from ta.momentum import RSIIndicator, StochasticOscillator, ROCIndicator
 from ta.volume import VolumeWeightedAveragePrice
 import plotly.graph_objects as go
 from datetime import datetime
+from config import Config
 
-# Configuration
-class Config:
-    def __init__(self):
-        self.symbol = '^FCHI'  # Symbole Yahoo Finance pour le CAC40
-        self.data_period = '5y'  # 5 ans de données
-        self.test_size = 0.2
-        self.random_state = 42
-        self.n_splits = 5  # Pour la validation croisée
-        self.grid_search_params = {
-            'n_estimators': [50, 100, 200],
-            'max_depth': [None, 10, 20, 30],
-            'min_samples_split': [2, 5, 10],
-            'min_samples_leaf': [1, 2, 4]
-        }
-
-# Initialisation de la configuration
+# Configuration utilisée depuis config.py
 config = Config()
 
 # Téléchargement des données

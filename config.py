@@ -5,6 +5,9 @@ Configuration pour le projet de prédiction du CAC40
 class Config:
     """Configuration principale du projet"""
     
+    # Paramètres généraux
+    random_state = 42  # Pour la reproductibilité
+    
     # Paramètres de données
     symbol = "^FCHI"  # Symbole Yahoo Finance pour le CAC40
     data_period = "5y"  # Période de données historiques (5 ans)
@@ -24,6 +27,17 @@ class Config:
         'min_samples_leaf': 1,
         'random_state': 42
     }
+    
+    # Paramètres pour la recherche d'hyperparamètres
+    grid_search_params = {
+        'n_estimators': [50, 100, 200],
+        'max_depth': [None, 10, 20, 30],
+        'min_samples_split': [2, 5, 10],
+        'min_samples_leaf': [1, 2, 4]
+    }
+    
+    # Paramètres de validation croisée
+    n_splits = 5  # Nombre de plis pour la validation croisée temporelle
     
     # Paramètres de prédiction
     prediction_days = 5  # Nombre de jours à prédire
